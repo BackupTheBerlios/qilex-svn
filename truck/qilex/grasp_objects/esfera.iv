@@ -1,0 +1,16 @@
+#Inventor V2.1 ascii
+
+Separator {
+		Material {
+				ambientColor	0.111586 0.111586 0.111586
+				diffuseColor	0.446344 0.446344 0.446344
+				specularColor	0.435035 0.435035 0.435035
+				emissiveColor	0 0 0
+				shininess	0.488017
+				transparency	0
+			    }
+		
+		Sphere {
+				radius 80.0
+		}	
+}

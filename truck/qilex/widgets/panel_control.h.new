@@ -1,0 +1,135 @@
+/***************************************************************************
+                          panel_control.h  -  description
+                             -------------------
+    begin                : Wed Jan 31 11:38:17 CET 2003
+    copyright            : (C) 2003 by Leopold Palomo Avellaneda
+    email                : lepalom@wol.es
+ ***************************************************************************/
+
+/***************************************************************************
+ *                                                                         *
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the GNU General Public License as published by  *
+ *   the Free Software Foundation; either version 2 of the License, or     *
+ *   (at your option) any later version.                                   *
+ *                                                                         *
+ ***************************************************************************/
+
+#ifndef PANEL_CONTROL_H
+#define PANEL_CONTROL_H
+
+#include <qvariant.h>
+#include <qcheckbox.h>
+#include <qgroupbox.h>
+#include <qlabel.h>
+#include <qlcdnumber.h>
+#include <qpushbutton.h>
+#include <qslider.h>
+#include <qtextbrowser.h>
+#include <qlayout.h>
+#include <qtooltip.h>
+#include <qwhatsthis.h>
+#include <qimage.h>
+#include <qpixmap.h>
+
+#include "qpanel_joint.h"
+
+
+class QVBoxLayout; 
+class QHBoxLayout; 
+class QGridLayout; 
+class QCheckBox;
+class QGroupBox;
+class QLCDNumber;
+class QLabel;
+class QSlider;
+class QMultiLineEdit;
+class QVBox;
+class Qlayout;
+class Qpanel_joint;
+
+
+class panel_control : public QWidget
+{ 
+    Q_OBJECT
+
+public:
+   panel_control( QWidget* parent = 0, const char* name = 0, int dof = 1);
+   ~panel_control();
+
+   Qpanel_joint **ldial;
+
+   QGroupBox* dials;
+   QGroupBox* GroupBox;
+
+   QLabel* TextLabelX;
+   QLabel* TextLabelY;
+   QLabel* TextLabelZ;
+   QLabel* TextLabelRX;
+   QLabel* TextLabelRY;
+   QLabel* TextLabelRZ;
+
+
+   QSlider* SliderX; //Slider2;
+   QSlider* SliderY; //Slider2_2;
+   QSlider* SliderZ; //Slider2_3;
+   QSlider* SliderRX; //Slider2_4;
+   QSlider* SliderRY; //Slider2_5;
+   QSlider* SliderRZ; //Slider2_6;
+
+
+   QCheckBox* check_world;
+   QCheckBox* check_tool;
+   QPushButton* pushButton1;
+   QTextBrowser* TextBrowser;
+   QBoxLayout *frame;
+
+signals:
+    void newValue(double);
+
+protected:
+   QVBoxLayout* layout15;
+   QVBoxLayout* layout14;
+   QHBoxLayout* dialsLayout;
+   QVBoxLayout* layout11;
+   QHBoxLayout* GroupBox2Layout;
+   QHBoxLayout* layout13;
+   QHBoxLayout* layout12;
+   QVBoxLayout* layout4;
+   QVBoxLayout* layout5;
+   QVBoxLayout* layout6;
+   QVBoxLayout* layout7;
+   QVBoxLayout* layout8;
+   QVBoxLayout* layout9_3;
+   QVBoxLayout* layout12_2;
+
+   signals:
+    /* ca */
+   void newValueX (double );
+/* emet un signal qual l'slider X canvia de valor */
+
+   void newValueY (double );
+/* emet un signal qual l'slider Y canvia de valor */
+
+   void newValueZ (double );
+/* emet un signal qual l'slider Z canvia de valor */
+
+   void newValueRX (double );
+/* emet un signal qual l'slider RX canvia de valor,
+   correspon a una rotació en radians */
+
+   void newValueRY (double );
+/* emet un signal qual l'slider RY canvia de valor,
+   correspon a una rotació en radians */
+
+   void newValueRZ (double );
+/* emet un signal qual l'slider RZ canvia de valor,
+   correspon a una rotació en radians */
+
+   private:
+      QPixmap image0;
+
+
+};
+
+#endif // PANEL_CONTROL_H

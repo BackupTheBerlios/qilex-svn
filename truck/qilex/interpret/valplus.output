@@ -1,0 +1,705 @@
+
+
+Terminals which are not used:
+
+   TkDELETEP
+   TkLISTL
+   TkLOAD
+   TkSTOREL
+   TkEXE
+   TkDIR
+   TkPCEXECUTE
+   TkPCEND
+   TkTRACE
+   TkUNTRACE
+   TkPROGRAM
+   TkLOCATIONS
+   TkREALS
+   TkMAS
+   TkMENOS
+   TkPOR
+   TkDIVISION
+   TkMODULO
+   TkEQ
+   TkNE
+   TkLT
+   TkGT
+   TkLE
+   TkGE
+   TkNOT
+   TkAND
+   TkOR
+   TkTRUE
+   TkFALSE
+   TkDEPART
+   TkDEPARTS
+   TkAPPRO
+   TkAPPROS
+   TkCLOSEI
+   TkOPENI
+   TkINRANGE
+   TkINVERSE
+   TkIF
+   TkTHEN
+   TkELSE
+   TkEND
+   TkWHILE
+   TkDO
+   TkUNTIL
+   TkFOR
+   TkTO
+   TkSTEP
+   TkCASE
+   TkOF
+   TkSTRING
+   TkCALL
+   TkRETURN
+   TkTYPE
+   TkPROMPT
+   TkBODY
+   TkPLACE
+   TkSPLACE
+   TkFLIPVIEW
+   TkVIEW
+   TkDRAWLOC
+   TkERASELOCS
+   TkALIGN
+   TkMULTVAR
+   TkNIF
+   TkGOTO
+   TkASIGNE
+   TkPUSH
+   TkPUSHTXT
+   TkPUSHK
+   TkPUSHVAR
+   TkLOOKFOR
+   TkPUTNAME
+   TkPOP
+   TkSUPEQ
+   TkTYPESTR
+
+
+
+Grammar
+rule 1    instruccion -> TkDELAY expr.arit
+rule 2    instruccion -> TkMOVE item.der.var
+rule 3    instruccion -> TkMOVES item.der.var
+rule 4    instruccion -> TkWHERE
+rule 5    instruccion -> TkSPEED expr.arit
+rule 6    instruccion -> TkHERE variable
+rule 7    instruccion -> TkSET TkWORLD '=' item.der.var
+rule 8    instruccion -> TkSET variable '=' item.der.var
+rule 9    instruccion -> TkDRAWLOCS
+rule 10   instruccion -> TkERASELOC variable
+rule 11   instruccion -> TkDELETEL variable
+rule 12   instruccion -> TkREADY
+rule 13   item.der.var -> TkTRANS '(' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ')'
+rule 14   item.der.var -> TkPPOINT '(' lexpr.arit ')'
+rule 15   item.der.var -> variable
+rule 16   variable -> TkVARP
+rule 17   variable -> TkVARPP
+rule 18   expr.arit -> TkNUMERO
+rule 19   lexpr.arit -> expr.arit
+rule 20   lexpr.arit -> lexpr.arit ',' expr.arit
+
+Terminals, with rules where they appear
+
+$ (-1)
+'(' (40) 13 14
+')' (41) 13 14
+',' (44) 13 20
+'=' (61) 7 8
+error (256)
+TkDELETEL (258) 11
+TkDELETEP (259)
+TkLISTL (260)
+TkLOAD (261)
+TkSTOREL (262)
+TkEXE (263)
+TkDIR (264)
+TkPCEXECUTE (265)
+TkPCEND (266)
+TkTRACE (267)
+TkUNTRACE (268)
+TkPROGRAM (269)
+TkLOCATIONS (270)
+TkREALS (271)
+TkMAS (272)
+TkMENOS (273)
+TkPOR (274)
+TkDIVISION (275)
+TkMODULO (276)
+TkEQ (277)
+TkNE (278)
+TkLT (279)
+TkGT (280)
+TkLE (281)
+TkGE (282)
+TkNOT (283)
+TkAND (284)
+TkOR (285)
+TkTRUE (286)
+TkFALSE (287)
+TkDEPART (288)
+TkDEPARTS (289)
+TkAPPRO (290)
+TkAPPROS (291)
+TkMOVE (292) 2
+TkMOVES (293) 3
+TkCLOSEI (294)
+TkOPENI (295)
+TkSET (296) 7 8
+TkDELAY (297) 1
+TkWHERE (298) 4
+TkSPEED (299) 5
+TkHERE (300) 6
+TkWORLD (301) 7
+TkTRANS (302) 13
+TkPPOINT (303) 14
+TkINRANGE (304)
+TkINVERSE (305)
+TkIF (306)
+TkTHEN (307)
+TkELSE (308)
+TkEND (309)
+TkWHILE (310)
+TkDO (311)
+TkUNTIL (312)
+TkFOR (313)
+TkTO (314)
+TkSTEP (315)
+TkCASE (316)
+TkOF (317)
+TkVARP (318) 16
+TkVARPP (319) 17
+TkNUMERO (320) 18
+TkSTRING (321)
+TkCALL (322)
+TkRETURN (323)
+TkTYPE (324)
+TkPROMPT (325)
+TkBODY (326)
+TkPLACE (327)
+TkSPLACE (328)
+TkFLIPVIEW (329)
+TkVIEW (330)
+TkDRAWLOC (331)
+TkDRAWLOCS (332) 9
+TkERASELOC (333) 10
+TkERASELOCS (334)
+TkALIGN (335)
+TkREADY (336) 12
+TkMULTVAR (337)
+TkNIF (338)
+TkGOTO (339)
+TkASIGNE (340)
+TkPUSH (341)
+TkPUSHTXT (342)
+TkPUSHK (343)
+TkPUSHVAR (344)
+TkLOOKFOR (345)
+TkPUTNAME (346)
+TkPOP (347)
+TkSUPEQ (348)
+TkTYPESTR (349)
+
+Nonterminals, with rules where they appear
+
+instruccion (99)
+    on left: 1 2 3 4 5 6 7 8 9 10 11 12
+item.der.var (100)
+    on left: 13 14 15, on right: 2 3 7 8
+variable (101)
+    on left: 16 17, on right: 6 8 10 11 15
+expr.arit (102)
+    on left: 18, on right: 1 5 13 19 20
+lexpr.arit (103)
+    on left: 19 20, on right: 14 20
+
+
+state 0
+
+    TkDELETEL	shift, and go to state 1
+    TkMOVE	shift, and go to state 2
+    TkMOVES	shift, and go to state 3
+    TkSET	shift, and go to state 4
+    TkDELAY	shift, and go to state 5
+    TkWHERE	shift, and go to state 6
+    TkSPEED	shift, and go to state 7
+    TkHERE	shift, and go to state 8
+    TkDRAWLOCS	shift, and go to state 9
+    TkERASELOC	shift, and go to state 10
+    TkREADY	shift, and go to state 11
+
+    instruccion	go to state 50
+
+
+
+state 1
+
+    instruccion  ->  TkDELETEL . variable   (rule 11)
+
+    TkVARP	shift, and go to state 12
+    TkVARPP	shift, and go to state 13
+
+    variable	go to state 14
+
+
+
+state 2
+
+    instruccion  ->  TkMOVE . item.der.var   (rule 2)
+
+    TkTRANS	shift, and go to state 15
+    TkPPOINT	shift, and go to state 16
+    TkVARP	shift, and go to state 12
+    TkVARPP	shift, and go to state 13
+
+    item.der.var	go to state 17
+    variable	go to state 18
+
+
+
+state 3
+
+    instruccion  ->  TkMOVES . item.der.var   (rule 3)
+
+    TkTRANS	shift, and go to state 15
+    TkPPOINT	shift, and go to state 16
+    TkVARP	shift, and go to state 12
+    TkVARPP	shift, and go to state 13
+
+    item.der.var	go to state 19
+    variable	go to state 18
+
+
+
+state 4
+
+    instruccion  ->  TkSET . TkWORLD '=' item.der.var   (rule 7)
+    instruccion  ->  TkSET . variable '=' item.der.var   (rule 8)
+
+    TkWORLD	shift, and go to state 20
+    TkVARP	shift, and go to state 12
+    TkVARPP	shift, and go to state 13
+
+    variable	go to state 21
+
+
+
+state 5
+
+    instruccion  ->  TkDELAY . expr.arit   (rule 1)
+
+    TkNUMERO	shift, and go to state 22
+
+    expr.arit	go to state 23
+
+
+
+state 6
+
+    instruccion  ->  TkWHERE .   (rule 4)
+
+    $default	reduce using rule 4 (instruccion)
+
+
+
+state 7
+
+    instruccion  ->  TkSPEED . expr.arit   (rule 5)
+
+    TkNUMERO	shift, and go to state 22
+
+    expr.arit	go to state 24
+
+
+
+state 8
+
+    instruccion  ->  TkHERE . variable   (rule 6)
+
+    TkVARP	shift, and go to state 12
+    TkVARPP	shift, and go to state 13
+
+    variable	go to state 25
+
+
+
+state 9
+
+    instruccion  ->  TkDRAWLOCS .   (rule 9)
+
+    $default	reduce using rule 9 (instruccion)
+
+
+
+state 10
+
+    instruccion  ->  TkERASELOC . variable   (rule 10)
+
+    TkVARP	shift, and go to state 12
+    TkVARPP	shift, and go to state 13
+
+    variable	go to state 26
+
+
+
+state 11
+
+    instruccion  ->  TkREADY .   (rule 12)
+
+    $default	reduce using rule 12 (instruccion)
+
+
+
+state 12
+
+    variable  ->  TkVARP .   (rule 16)
+
+    $default	reduce using rule 16 (variable)
+
+
+
+state 13
+
+    variable  ->  TkVARPP .   (rule 17)
+
+    $default	reduce using rule 17 (variable)
+
+
+
+state 14
+
+    instruccion  ->  TkDELETEL variable .   (rule 11)
+
+    $default	reduce using rule 11 (instruccion)
+
+
+
+state 15
+
+    item.der.var  ->  TkTRANS . '(' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ')'   (rule 13)
+
+    '(' 	shift, and go to state 27
+
+
+
+state 16
+
+    item.der.var  ->  TkPPOINT . '(' lexpr.arit ')'   (rule 14)
+
+    '(' 	shift, and go to state 28
+
+
+
+state 17
+
+    instruccion  ->  TkMOVE item.der.var .   (rule 2)
+
+    $default	reduce using rule 2 (instruccion)
+
+
+
+state 18
+
+    item.der.var  ->  variable .   (rule 15)
+
+    $default	reduce using rule 15 (item.der.var)
+
+
+
+state 19
+
+    instruccion  ->  TkMOVES item.der.var .   (rule 3)
+
+    $default	reduce using rule 3 (instruccion)
+
+
+
+state 20
+
+    instruccion  ->  TkSET TkWORLD . '=' item.der.var   (rule 7)
+
+    '=' 	shift, and go to state 29
+
+
+
+state 21
+
+    instruccion  ->  TkSET variable . '=' item.der.var   (rule 8)
+
+    '=' 	shift, and go to state 30
+
+
+
+state 22
+
+    expr.arit  ->  TkNUMERO .   (rule 18)
+
+    $default	reduce using rule 18 (expr.arit)
+
+
+
+state 23
+
+    instruccion  ->  TkDELAY expr.arit .   (rule 1)
+
+    $default	reduce using rule 1 (instruccion)
+
+
+
+state 24
+
+    instruccion  ->  TkSPEED expr.arit .   (rule 5)
+
+    $default	reduce using rule 5 (instruccion)
+
+
+
+state 25
+
+    instruccion  ->  TkHERE variable .   (rule 6)
+
+    $default	reduce using rule 6 (instruccion)
+
+
+
+state 26
+
+    instruccion  ->  TkERASELOC variable .   (rule 10)
+
+    $default	reduce using rule 10 (instruccion)
+
+
+
+state 27
+
+    item.der.var  ->  TkTRANS '(' . expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ')'   (rule 13)
+
+    TkNUMERO	shift, and go to state 22
+
+    expr.arit	go to state 31
+
+
+
+state 28
+
+    item.der.var  ->  TkPPOINT '(' . lexpr.arit ')'   (rule 14)
+
+    TkNUMERO	shift, and go to state 22
+
+    expr.arit	go to state 32
+    lexpr.arit	go to state 33
+
+
+
+state 29
+
+    instruccion  ->  TkSET TkWORLD '=' . item.der.var   (rule 7)
+
+    TkTRANS	shift, and go to state 15
+    TkPPOINT	shift, and go to state 16
+    TkVARP	shift, and go to state 12
+    TkVARPP	shift, and go to state 13
+
+    item.der.var	go to state 34
+    variable	go to state 18
+
+
+
+state 30
+
+    instruccion  ->  TkSET variable '=' . item.der.var   (rule 8)
+
+    TkTRANS	shift, and go to state 15
+    TkPPOINT	shift, and go to state 16
+    TkVARP	shift, and go to state 12
+    TkVARPP	shift, and go to state 13
+
+    item.der.var	go to state 35
+    variable	go to state 18
+
+
+
+state 31
+
+    item.der.var  ->  TkTRANS '(' expr.arit . ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ')'   (rule 13)
+
+    ',' 	shift, and go to state 36
+
+
+
+state 32
+
+    lexpr.arit  ->  expr.arit .   (rule 19)
+
+    $default	reduce using rule 19 (lexpr.arit)
+
+
+
+state 33
+
+    item.der.var  ->  TkPPOINT '(' lexpr.arit . ')'   (rule 14)
+    lexpr.arit  ->  lexpr.arit . ',' expr.arit   (rule 20)
+
+    ',' 	shift, and go to state 37
+    ')' 	shift, and go to state 38
+
+
+
+state 34
+
+    instruccion  ->  TkSET TkWORLD '=' item.der.var .   (rule 7)
+
+    $default	reduce using rule 7 (instruccion)
+
+
+
+state 35
+
+    instruccion  ->  TkSET variable '=' item.der.var .   (rule 8)
+
+    $default	reduce using rule 8 (instruccion)
+
+
+
+state 36
+
+    item.der.var  ->  TkTRANS '(' expr.arit ',' . expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ')'   (rule 13)
+
+    TkNUMERO	shift, and go to state 22
+
+    expr.arit	go to state 39
+
+
+
+state 37
+
+    lexpr.arit  ->  lexpr.arit ',' . expr.arit   (rule 20)
+
+    TkNUMERO	shift, and go to state 22
+
+    expr.arit	go to state 40
+
+
+
+state 38
+
+    item.der.var  ->  TkPPOINT '(' lexpr.arit ')' .   (rule 14)
+
+    $default	reduce using rule 14 (item.der.var)
+
+
+
+state 39
+
+    item.der.var  ->  TkTRANS '(' expr.arit ',' expr.arit . ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ')'   (rule 13)
+
+    ',' 	shift, and go to state 41
+
+
+
+state 40
+
+    lexpr.arit  ->  lexpr.arit ',' expr.arit .   (rule 20)
+
+    $default	reduce using rule 20 (lexpr.arit)
+
+
+
+state 41
+
+    item.der.var  ->  TkTRANS '(' expr.arit ',' expr.arit ',' . expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ')'   (rule 13)
+
+    TkNUMERO	shift, and go to state 22
+
+    expr.arit	go to state 42
+
+
+
+state 42
+
+    item.der.var  ->  TkTRANS '(' expr.arit ',' expr.arit ',' expr.arit . ',' expr.arit ',' expr.arit ',' expr.arit ')'   (rule 13)
+
+    ',' 	shift, and go to state 43
+
+
+
+state 43
+
+    item.der.var  ->  TkTRANS '(' expr.arit ',' expr.arit ',' expr.arit ',' . expr.arit ',' expr.arit ',' expr.arit ')'   (rule 13)
+
+    TkNUMERO	shift, and go to state 22
+
+    expr.arit	go to state 44
+
+
+
+state 44
+
+    item.der.var  ->  TkTRANS '(' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit . ',' expr.arit ',' expr.arit ')'   (rule 13)
+
+    ',' 	shift, and go to state 45
+
+
+
+state 45
+
+    item.der.var  ->  TkTRANS '(' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' . expr.arit ',' expr.arit ')'   (rule 13)
+
+    TkNUMERO	shift, and go to state 22
+
+    expr.arit	go to state 46
+
+
+
+state 46
+
+    item.der.var  ->  TkTRANS '(' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit . ',' expr.arit ')'   (rule 13)
+
+    ',' 	shift, and go to state 47
+
+
+
+state 47
+
+    item.der.var  ->  TkTRANS '(' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' . expr.arit ')'   (rule 13)
+
+    TkNUMERO	shift, and go to state 22
+
+    expr.arit	go to state 48
+
+
+
+state 48
+
+    item.der.var  ->  TkTRANS '(' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit . ')'   (rule 13)
+
+    ')' 	shift, and go to state 49
+
+
+
+state 49
+
+    item.der.var  ->  TkTRANS '(' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ',' expr.arit ')' .   (rule 13)
+
+    $default	reduce using rule 13 (item.der.var)
+
+
+
+state 50
+
+    $   	go to state 51
+
+
+
+state 51
+
+    $   	go to state 52
+
+
+
+state 52
+
+    $default	accept
