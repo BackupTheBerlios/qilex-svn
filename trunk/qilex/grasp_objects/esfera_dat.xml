@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso8859-15"?>
+<!DOCTYPE kineobject [
+  <!ELEMENT kineobject (point+)>
+
+<!-- name of the object ex: cube -->
+<!-- number of points ex: 4 -->
+  <!ATTLIST kineobject name CDATA #REQUIRED
+                      num_point CDATA #REQUIRED >
+
+<!-- Point's descrption -->
+
+  <!ELEMENT point EMPTY>
+   <!-- id of the point. Must be a number: 1...num_point -->
+   <!-- x: x-component of the point -->
+   <!-- y: y-component of the point-->
+   <!-- z: z-component of the point-->
+   <!-- nx: x-component of the normal at the point-->
+   <!-- ny: y-component of the normal at the point-->
+   <!-- nz: z-component of the normal at the point  -->
+   <!ATTLIST point
+                id ID #REQUIRED
+                x CDATA #REQUIRED
+                y CDATA #REQUIRED
+                z CDATA #REQUIRED
+                nx CDATA #REQUIRED
+                ny CDATA #REQUIRED
+                nz CDATA #REQUIRED>
+]>
+<kineobject name="cube" num_point="4">
+   <point id="1" x="50" y="62.45" z="0" nx="-1" ny="0" nz="0">
+   </point>
+   <point id="2" x="80" y="0" z="0" nx="-1" ny="0" nz="0">
+   </point>
+   <point id="3" x="50" y="-62.45" z="0" nx="-1" ny="0" nz="0">
+   </point>
+   <point id="4" x="-70" y="38.73" z="0" nx="1" ny="0" nz="0">
+   </point>
+</kineobject>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso8859-15"?>
+<!DOCTYPE kinechain [
+  <!ELEMENT kinechain (manufacturer,joint+)>
+
+<!-- name of the robot ex: puma 560 -->
+<!-- number of degrees of freedom ex: 6 -->
+  <!ATTLIST kinechain name CDATA #REQUIRED
+                      dof CDATA #REQUIRED >
+
+<!-- manufacturer of the robot, not required ex: unimation -->
+  <!ELEMENT manufacturer (#PCDATA)>
+
+<!-- Denavit-Hartenberg parameters of the robot -->
+<!-- and a little more data of the robot -->
+
+  <!ELEMENT joint EMPTY>
+<!-- id of the join. Must be a number: 1...dof -->
+   <!-- sigma: 0 join prismatic, 1 join revolute -->
+   <!-- theta of the join  (degree)-->
+   <!-- alpha of the join  (degree)-->
+   <!-- ai of the join  (better mm)-->
+   <!-- di of the join  (better mm)-->
+   <!-- low_rank = the lowest value of the join (degree or mm)  -->
+   <!-- up_rank = the highest value of the join (degree or mm)  -->
+   <!-- max_speed = the max speed of the join (degree/s or mm/s) (not required default=30) -->
+   <!-- max_accc = the max acceleration speed of the join(degree/s²or mm/s²) (not required default=1) -->
+   <!-- value in home position of the join  (not required default=0)-->
+   <!ATTLIST joint
+                id ID #REQUIRED
+                sigma (0 | 1) #IMPLIED
+                theta CDATA #REQUIRED
+                alpha CDATA #REQUIRED
+                ai CDATA #REQUIRED
+                di CDATA #REQUIRED
+                low_rank CDATA #REQUIRED
+                up_rank CDATA #REQUIRED
+                max_speed CDATA "30"
+                max_acc CDATA "1"
+                home CDATA "0">
+]>

@@ -1,0 +1,462 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>new_kinematic_chain</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>new_kinematic_chain</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>311</width>
+            <height>311</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>New Kinematic Chain</string>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>MainForm</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>10</x>
+                <y>10</y>
+                <width>290</width>
+                <height>287</height>
+            </rect>
+        </property>
+        <grid>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLayoutWidget" row="1" column="0">
+                <property name="name">
+                    <cstring>ModelFile</cstring>
+                </property>
+                <hbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>LabelFileModel</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Model file:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>valueModel_file</cstring>
+                        </property>
+                        <property name="cursorPosition">
+                            <number>0</number>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>buttonFileModel</cstring>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>20</width>
+                                <height>30</height>
+                            </size>
+                        </property>
+                        <property name="maximumSize">
+                            <size>
+                                <width>20</width>
+                                <height>30</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string>...</string>
+                        </property>
+                    </widget>
+                </hbox>
+            </widget>
+            <widget class="QLayoutWidget" row="0" column="0">
+                <property name="name">
+                    <cstring>ModelName</cstring>
+                </property>
+                <hbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>LabelName</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Name:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>textName</cstring>
+                        </property>
+                        <property name="text">
+                            <string>newChain</string>
+                        </property>
+                    </widget>
+                </hbox>
+            </widget>
+            <widget class="QLayoutWidget" row="5" column="0">
+                <property name="name">
+                    <cstring>KinematicEngine</cstring>
+                </property>
+                <hbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>LabelKinematic_Engine</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Kinematic Engine:</string>
+                        </property>
+                    </widget>
+                    <widget class="QComboBox">
+                        <item>
+                            <property name="text">
+                                <string>Rchain</string>
+                            </property>
+                        </item>
+                        <property name="name">
+                            <cstring>type_engine</cstring>
+                        </property>
+                    </widget>
+                </hbox>
+            </widget>
+            <widget class="QLayoutWidget" row="3" column="0">
+                <property name="name">
+                    <cstring>Position</cstring>
+                </property>
+                <hbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>LabelX</cstring>
+                        </property>
+                        <property name="text">
+                            <string>X:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>valueX</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>LabelY</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Y:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>valueY</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>LabelZ</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Z:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>valueZ</cstring>
+                        </property>
+                    </widget>
+                </hbox>
+            </widget>
+            <widget class="QLayoutWidget" row="4" column="0">
+                <property name="name">
+                    <cstring>Orientation</cstring>
+                </property>
+                <hbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>LabelAxes</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Axes:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>axeX</cstring>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>20</width>
+                                <height>30</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string>0</string>
+                        </property>
+                        <property name="cursorPosition">
+                            <number>1</number>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>axeY</cstring>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>20</width>
+                                <height>30</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string>0</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>axeZ</cstring>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>20</width>
+                                <height>30</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string>1</string>
+                        </property>
+                    </widget>
+                    <spacer>
+                        <property name="name">
+                            <cstring>Horizontal Spacing2_2</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>16</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>LabelAngle</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Angle:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>valueAngle</cstring>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>40</width>
+                                <height>30</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string>0</string>
+                        </property>
+                    </widget>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>textDegree</cstring>
+                        </property>
+                        <property name="text">
+                            <string>degree</string>
+                        </property>
+                    </widget>
+                </hbox>
+            </widget>
+            <widget class="QLayoutWidget" row="7" column="0">
+                <property name="name">
+                    <cstring>Bottons</cstring>
+                </property>
+                <hbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>buttonHelp</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Help</string>
+                        </property>
+                        <property name="accel">
+                            <string>F1</string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <spacer>
+                        <property name="name">
+                            <cstring>Horizontal Spacing2</cstring>
+                        </property>
+                        <property name="orientation">
+                            <enum>Horizontal</enum>
+                        </property>
+                        <property name="sizeType">
+                            <enum>Expanding</enum>
+                        </property>
+                        <property name="sizeHint">
+                            <size>
+                                <width>100</width>
+                                <height>20</height>
+                            </size>
+                        </property>
+                    </spacer>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>buttonOk</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;OK</string>
+                        </property>
+                        <property name="accel">
+                            <string></string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>true</bool>
+                        </property>
+                        <property name="default">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>buttonCancel</cstring>
+                        </property>
+                        <property name="text">
+                            <string>&amp;Cancel</string>
+                        </property>
+                        <property name="accel">
+                            <string></string>
+                        </property>
+                        <property name="autoDefault">
+                            <bool>true</bool>
+                        </property>
+                    </widget>
+                </hbox>
+            </widget>
+            <widget class="QLayoutWidget" row="6" column="0">
+                <property name="name">
+                    <cstring>DatFile</cstring>
+                </property>
+                <hbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLabel">
+                        <property name="name">
+                            <cstring>LabelDat_File</cstring>
+                        </property>
+                        <property name="text">
+                            <string>Dat File:</string>
+                        </property>
+                    </widget>
+                    <widget class="QLineEdit">
+                        <property name="name">
+                            <cstring>valueDat_file</cstring>
+                        </property>
+                    </widget>
+                    <widget class="QPushButton">
+                        <property name="name">
+                            <cstring>buttonFileEngine</cstring>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>20</width>
+                                <height>30</height>
+                            </size>
+                        </property>
+                        <property name="maximumSize">
+                            <size>
+                                <width>20</width>
+                                <height>30</height>
+                            </size>
+                        </property>
+                        <property name="text">
+                            <string>...</string>
+                        </property>
+                    </widget>
+                </hbox>
+            </widget>
+            <widget class="QLabel" row="2" column="0">
+                <property name="name">
+                    <cstring>LabelText_O</cstring>
+                </property>
+                <property name="text">
+                    <string>Position and Orientation</string>
+                </property>
+            </widget>
+        </grid>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>new_kinematic_chain</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>buttonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>new_kinematic_chain</receiver>
+        <slot>reject()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>textName</tabstop>
+    <tabstop>valueModel_file</tabstop>
+    <tabstop>buttonFileModel</tabstop>
+    <tabstop>valueX</tabstop>
+    <tabstop>valueY</tabstop>
+    <tabstop>valueZ</tabstop>
+    <tabstop>axeX</tabstop>
+    <tabstop>axeY</tabstop>
+    <tabstop>axeZ</tabstop>
+    <tabstop>valueAngle</tabstop>
+    <tabstop>type_engine</tabstop>
+    <tabstop>valueDat_file</tabstop>
+    <tabstop>buttonFileEngine</tabstop>
+    <tabstop>buttonHelp</tabstop>
+    <tabstop>buttonOk</tabstop>
+    <tabstop>buttonCancel</tabstop>
+</tabstops>
+<variables>
+    <variable access="public">SoTransform *transform;</variable>
+    <variable access="public">SoSeparator *object;</variable>
+    <variable access="public">int simulator_engine;</variable>
+    <variable access="public">QString DatFile;</variable>
+    <variable access="public">QString ModelFile;</variable>
+</variables>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

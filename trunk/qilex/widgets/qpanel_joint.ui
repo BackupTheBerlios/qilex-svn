@@ -1,0 +1,79 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>Form1</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>Form1</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>276</width>
+            <height>25</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <widget class="QLayoutWidget">
+        <property name="name">
+            <cstring>layout9</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>275</width>
+                <height>25</height>
+            </rect>
+        </property>
+        <hbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>label_joint</cstring>
+                </property>
+                <property name="text">
+                    <string>joint1</string>
+                </property>
+            </widget>
+            <widget class="QSlider">
+                <property name="name">
+                    <cstring>slider</cstring>
+                </property>
+                <property name="minValue">
+                    <number>-360</number>
+                </property>
+                <property name="maxValue">
+                    <number>360</number>
+                </property>
+                <property name="orientation">
+                    <enum>Horizontal</enum>
+                </property>
+                <property name="whatsThis" stdset="0">
+                    <string>360</string>
+                </property>
+            </widget>
+            <widget class="QLCDNumber">
+                <property name="name">
+                    <cstring>joint_value</cstring>
+                </property>
+                <property name="mode">
+                    <enum>DEC</enum>
+                </property>
+            </widget>
+            <widget class="QLabel">
+                <property name="name">
+                    <cstring>unit</cstring>
+                </property>
+                <property name="text">
+                    <string>deg</string>
+                </property>
+            </widget>
+        </hbox>
+    </widget>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

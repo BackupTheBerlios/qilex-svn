@@ -1,0 +1,59 @@
+Qilex - A simulator of robots.
+
+Information
+
+Qilex is a simulator of robot, specially robotics arms. It can simulate any (more than 6 dof) kinematic chain.
+You need some parameters (D-H) and some inventor file of the robot. It can also incorporate static elements to the scene.
+It's multiplatform application in the way that the libraries and the tools that use Qilex were.
+
+
+Features so far:
+
+It incorporates a little interpret to manipulate the robot.
+Can calculate the direct kinematics of any robot.
+Can calculate the inverse kinematic of a lot of robots.
+The graphics are powerfull. Thank's Open Inventor.
+
+Requirements:
+
+Qilex requires the development files of the following libraries to be present on your system in order to compile:
+Flex++ - Flex is a fast lexical analyser generator.
+
+Bison++ - A powerful tool to generate parsers. NOT BISON
+
+Open Inventor - An Open Inventor library. I recommend Coin.
+
+Qt (>= 3.X) - A multiplatform C++ application development framework.
+
+SoQt - SoQt is a library which provides the glue between Open Inventor library and Qt.
+
+
+Compilation and Installation:
+
+Qilex is being developed on a Debian/GNU Linux system running the stable distribution. That means,
+that you might need a version of GCC, automake (>= 1.5), and autoconf (>= 2.50) to compile it.
+
+
+Qilex however could be compiled in any other OS that has the libraries. So, it could be compiled in
+Windows, Mac, or any other Unix than GNU/Linux.
+
+Do the following:
+Download the source and unpack it.
+Change into the qilex-x.x.x directory and do
+$ ./configure && make
+ Do not forget to pass the --with-qt-dir=/path/to/whereisqtinstalled option to the configure-Script,
+ I don't know others OS. So any comment will be welcome.
+Become root:
+$ su
+ Give the root password, if the program asks for it.
+Do as root:
+$ make install
+ That's it!
+
+
+
+License:
+
+Qilex is released under the terms of the GNU General Public License (GPL).
+
+Leopold Palomo Avellaneda <lepalom@berlios.de>

@@ -1,0 +1,520 @@
+<!DOCTYPE UI><UI version="3.1" stdsetdef="1">
+<class>slider_rot</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>panel_joint</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>336</width>
+            <height>499</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Panel Control</string>
+    </property>
+    <spacer>
+        <property name="name">
+            <cstring>Spacer1</cstring>
+        </property>
+        <property name="orientation">
+            <enum>Vertical</enum>
+        </property>
+        <property name="sizeType">
+            <enum>Expanding</enum>
+        </property>
+        <property name="sizeHint">
+            <size>
+                <width>20</width>
+                <height>68</height>
+            </size>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>164</x>
+                <y>11</y>
+                <width>20</width>
+                <height>68</height>
+            </rect>
+        </property>
+    </spacer>
+    <widget class="QTextBrowser">
+        <property name="name">
+            <cstring>TextBrowser1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>11</x>
+                <y>262</y>
+                <width>301</width>
+                <height>180</height>
+            </rect>
+        </property>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>dials</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>12</x>
+                <y>12</y>
+                <width>299</width>
+                <height>97</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string>Values</string>
+        </property>
+        <hbox>
+            <property name="name">
+                <cstring>unnamed</cstring>
+            </property>
+            <widget class="QLayoutWidget">
+                <property name="name">
+                    <cstring>layout11</cstring>
+                </property>
+                <vbox>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout9</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>label_joint</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>joint1</string>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>slider</cstring>
+                                </property>
+                                <property name="minValue">
+                                    <number>-360</number>
+                                </property>
+                                <property name="maxValue">
+                                    <number>360</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="whatsThis" stdset="0">
+                                    <string>360</string>
+                                </property>
+                            </widget>
+                            <widget class="QLCDNumber">
+                                <property name="name">
+                                    <cstring>join_value</cstring>
+                                </property>
+                                <property name="mode">
+                                    <enum>DEC</enum>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>unit</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>deg</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                    <widget class="QLayoutWidget">
+                        <property name="name">
+                            <cstring>layout9_2</cstring>
+                        </property>
+                        <hbox>
+                            <property name="name">
+                                <cstring>unnamed</cstring>
+                            </property>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>label_joint_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>joint1</string>
+                                </property>
+                            </widget>
+                            <widget class="QSlider">
+                                <property name="name">
+                                    <cstring>slider_2</cstring>
+                                </property>
+                                <property name="minValue">
+                                    <number>-360</number>
+                                </property>
+                                <property name="maxValue">
+                                    <number>360</number>
+                                </property>
+                                <property name="orientation">
+                                    <enum>Horizontal</enum>
+                                </property>
+                                <property name="whatsThis" stdset="0">
+                                    <string>360</string>
+                                </property>
+                            </widget>
+                            <widget class="QLCDNumber">
+                                <property name="name">
+                                    <cstring>join_value_2</cstring>
+                                </property>
+                                <property name="mode">
+                                    <enum>DEC</enum>
+                                </property>
+                            </widget>
+                            <widget class="QLabel">
+                                <property name="name">
+                                    <cstring>unit_2</cstring>
+                                </property>
+                                <property name="text">
+                                    <string>deg</string>
+                                </property>
+                            </widget>
+                        </hbox>
+                    </widget>
+                </vbox>
+            </widget>
+        </hbox>
+    </widget>
+    <widget class="QGroupBox">
+        <property name="name">
+            <cstring>GroupBoxLook</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>12</x>
+                <y>115</y>
+                <width>299</width>
+                <height>140</height>
+            </rect>
+        </property>
+        <property name="title">
+            <string></string>
+        </property>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout12</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>219</x>
+                    <y>24</y>
+                    <width>68</width>
+                    <height>92</height>
+                </rect>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>check_world</cstring>
+                    </property>
+                    <property name="text">
+                        <string>World</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox">
+                    <property name="name">
+                        <cstring>check_tool</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Tool</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>pushButton1</cstring>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image0</pixmap>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout4</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>13</x>
+                    <y>13</y>
+                    <width>30</width>
+                    <height>114</height>
+                </rect>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>TextLabelX</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string> X </string>
+                    </property>
+                </widget>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>Slider2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout5</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>49</x>
+                    <y>13</y>
+                    <width>29</width>
+                    <height>114</height>
+                </rect>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>TextLabelY</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string> Y </string>
+                    </property>
+                </widget>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>Slider2_2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout6</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>84</x>
+                    <y>13</y>
+                    <width>30</width>
+                    <height>114</height>
+                </rect>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>TextLabelZ</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string> Z </string>
+                    </property>
+                </widget>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>Slider2_3</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout7</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>120</x>
+                    <y>13</y>
+                    <width>27</width>
+                    <height>114</height>
+                </rect>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>TextLabelRX</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>RX</string>
+                    </property>
+                </widget>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>Slider2_4</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout8</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>153</x>
+                    <y>13</y>
+                    <width>26</width>
+                    <height>114</height>
+                </rect>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>TextLabelRY</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>RY</string>
+                    </property>
+                </widget>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>Slider2_5</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+        <widget class="QLayoutWidget">
+            <property name="name">
+                <cstring>layout9</cstring>
+            </property>
+            <property name="geometry">
+                <rect>
+                    <x>185</x>
+                    <y>13</y>
+                    <width>27</width>
+                    <height>114</height>
+                </rect>
+            </property>
+            <vbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>TextLabelRZ</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>RZ</string>
+                    </property>
+                </widget>
+                <widget class="QSlider">
+                    <property name="name">
+                        <cstring>Slider2_6</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                </widget>
+            </vbox>
+        </widget>
+    </widget>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="2814">789c7d9547735d370c85f7fa156f849d2703dfc636992cdcab9aabec4c16ac92ac66abd89633f9ef210f28c76f13515a7cc221098000eedd3babfdddadd59dbb1b9757feea28aee2a1bf58dd49d7a7a7377ffef5c7df1b9ba35eb5dfd9aca6cddf3636f7ae5671b57d7e961bb0ae40037e1a7b12d65a989cb059ba3d0b5bd3b9748e9d0f845deafb47e130759e844be96cc14b31c3027f8ec1492f5183ef838b1b329ce7ebceaab3efec853d379e461da611e70fe07adc24e7bd06a7c5690bfb2e38ab69423ee861e3d928371be813382a65e4bc4b70566586dee3fec568bb404f1fc156bb45ce473e16afc3e271de1138e8c944b0ea3c1bb97f079c755ee47d906f356a6b111f3d004f6652c21fc0b399d50c7fe0af524e2b05fb36581ba524fe056c74b2e2df85b0314ae27d050e66b2e21fde57a5b6a017ce262bf1efbcb19eda023f15ae09819e67f0628c2dd82faceca4e11fa31eb436c1493c6f84add2f097b6c0d62efdbdf6c1de6a2df944bdea68b29378e5fe688386ff84fcd568a3167f508fbad8c149bde17dccd416f83358b585fd49d896ce065ca331f2dea85763dd68e01f1f825d5be07bc23638f1674fd84ddd2e5c6cf1d20f8f1a57ef9c157e099e2a8b7fa8673bbbda61b05f8195cb56fcc37bd4f25352bf14c1a6da857f742eb3e41bfe5aef672bf9443fd8e882877f3e80535bd06b613ff5f7453edce8bd437f30f46ef283173bfc73b32b5ee267613f39d42bbd072b1ffafba13e9d6e0bfb7784fd28e779c4e3aac34ef28d7e73aedae5fc17e018c69e6fd447bd3d39a9bf9bc67ea8ed28f93d032f4179a907f493d7be04e987273f59ea0ff17913ac977ca25ebc0dc32cf19f759e83dcf7165cda821df51b8660c5ce788f30061f910f863ea810a3f407fa37e890651e92178e7310c6fc08a1167c801ef90c29ce51f871e3384697647ea1bfe394c628efff05bcc465829e50af51a56194fbdf81758c09f92139cf241525fe6760df16f437c2694892afebce4eec84f91b43d2e21f21bf3155bbd4cb27704e2649fe8e3aa728f351fc29552ff6af8deb6d31e13d19f3228d4927995fb673e9f1e3fc3457967ce3fb96963cf6f89e8375ca49ea0ff3be7a93b2d4eb77b0cdb7f19d825ddd2ffd8cfe4d210f59f28779d6766789f75be33cb6053bceab569d257fe8f74a2e8bffc86f1db7214bbd605e57ca45f647e13215e9077cbfaa7528322ff0bd2863998bf873fa93253ec45b772f9de15f531779df13b0294e98512f956a4380d16f286f61bc47092516e93f7cbf4bb9fddef3c92d17c4b377f5eb62625affcf7f1af658812327ce5cf8800fd7357cc49ff8b82a4ef894cfa03ae7cfa2124ddddf344df1852ff892af7e5575cd75d534c557fec6dff9867ff0bdff545d731f8a07f5ef213fe2c7fca49ef4f456d5354df18c9ff30b7ec95bbccd3bbccb7bfc8a5f3795cc4a7ec36ff91dbfe77dfec01f79e091279e7961d5ceeae768366cd9d5d410790a142951a64207d5a26f35744847f4898ee9844ee98ccee9337da10bba5cd35cd1357dad9a6ff49d6ee807dda3fbf4801eae691ed1637a424fe9193da717f492b6689b7668774db347afe835bda1b7f48ede57cd3e7da08f34ac698e69a489665a48912643961c8d9ed734a3af0179efebf0f3a952ae657440e3af9aff5b9bfffcbef12f3407774b</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>slider</sender>
+        <signal>valueChanged(int)</signal>
+        <receiver>join_value</receiver>
+        <slot>display(int)</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>slider</tabstop>
+    <tabstop>TextBrowser1</tabstop>
+    <tabstop>Slider2_6</tabstop>
+    <tabstop>Slider2</tabstop>
+    <tabstop>Slider2_2</tabstop>
+    <tabstop>Slider2_3</tabstop>
+    <tabstop>Slider2_4</tabstop>
+    <tabstop>Slider2_5</tabstop>
+    <tabstop>check_world</tabstop>
+    <tabstop>check_tool</tabstop>
+    <tabstop>pushButton1</tabstop>
+</tabstops>
+<signals>
+    <signal>newValue(double)</signal>
+</signals>
+<slots>
+    <slot>j1_value_destroyed( QObject * )</slot>
+    <slot>j1_value_overflow()</slot>
+    <slot>setValue( double )</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
