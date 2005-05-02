@@ -1,4 +1,4 @@
-AC_DEFUN(MN_BISON_PLUS_PLUS_CHECK,
+AC_DEFUN([MN_BISON_PLUS_PLUS_CHECK],
 [ bison_plusplus_path=""
         AC_ARG_WITH(bisonpp,
         [  --with-bisonpp=<path>   specify the directory of bison++],
@@ -11,7 +11,7 @@ AC_DEFUN(MN_BISON_PLUS_PLUS_CHECK,
    PATH="$mn_save_path"
 ])
 
-AC_DEFUN(MN_BISON_PLUS_PLUS_EVAL,
+AC_DEFUN([MN_BISON_PLUS_PLUS_EVAL],
 [ if test "x$BISONXX" = "xno"; then
                 AC_MSG_ERROR([Can't find bison++. Bison++ is required to
 build qilex.])
@@ -61,13 +61,13 @@ esac
 AC_MSG_RESULT([$QT_VER ($QT_MAJOR)])
 
 # Check that moc is in path
-AC_CHECK_PROG(MOC, moc, moc)
+AC_PATH_PROG(MOC, moc, , $PATH:$QTDIR/bin)
 if test x$MOC = x ; then
         AC_MSG_ERROR([*** moc must be in path])
 fi
 
 # uic is the Qt user interface compiler
-AC_CHECK_PROG(UIC, uic, uic)
+AC_PATH_PROG(UIC, uic, , $PATH:$QTDIR/bin)
 if test x$UIC = x ; then
         AC_MSG_ERROR([*** uic must be in path])
 fi
@@ -126,7 +126,7 @@ case "${host}" in
 #            QT_LIB="-lqt-mt"
 #            QT_IS_MT="yes"
         if test "x`ls $QTDIR/lib/libqt-mt.* 2> /dev/null`" != x ; then
-            QT_LIB="-lqt-mt -lqt"
+            QT_LIB="-lqt-mt"
             QT_IS_MT="yes"
         elif test "x`ls $QTDIR/lib/libqt.* 2> /dev/null`" != x ; then
             QT_LIB="-lqt"

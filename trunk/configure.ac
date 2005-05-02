@@ -23,7 +23,7 @@ AC_PROG_INSTALL
 AC_PROG_LN_S
 AC_PROG_MAKE_SET
 
-CPPFLAGS="$CPPFLAGS  -Wall  -Wpointer-arith  -Wstrict-prototypes -W -O2 -g0 -DQT_NO_DEBUG -DQT_SHARED -DQT_THREAD_SUPPORT"
+CPPFLAGS="$CPPFLAGS  -Wall  -Wpointer-arith  -W -O2 -g0 -DQT_NO_DEBUG -DQT_SHARED -DQT_THREAD_SUPPORT"
 
 dnl ---------------------------------------------------------------------------
 dnl Check host operating system.
@@ -87,6 +87,7 @@ if test "$LEX" != flex; then
 fi
 
 MN_BISON_PLUS_PLUS_CHECK
+MN_BISON_PLUS_PLUS_EVAL
 
 
 # Checks for libraries.

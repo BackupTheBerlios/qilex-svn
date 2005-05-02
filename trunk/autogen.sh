@@ -42,7 +42,7 @@ autoheader			&& \
 echo "- automake."		&& \
 automake --add-missing --gnu --copy	&& \
 echo				&& \
-./configure "$@" --with-qtdir=/usr/share/qt3	&& exit 0
+./configure "$@" 	&& exit 0
 
 exit 1
 
