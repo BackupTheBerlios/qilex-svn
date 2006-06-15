@@ -15,7 +15,11 @@
 //#include <string>
 #include <fstream>
 #include <sstream>
+
+#ifndef __FLEX_LEXER_H
 #include <FlexLexer.h>
+#endif
+
 
 #include "interpret/ppoint.h"
 #include "interpret/point.h"

@@ -61,7 +61,7 @@ esac
 AC_MSG_RESULT([$QT_VER ($QT_MAJOR)])
 
 # Check that moc is in path
-AC_PATH_PROG(MOC, moc, , $PATH:$QTDIR/bin)
+AC_PATH_PROG(MOC, moc-qt3, , $PATH:$QTDIR/bin)
 if test x$MOC = x ; then
         AC_MSG_ERROR([*** moc must be in path])
 fi
